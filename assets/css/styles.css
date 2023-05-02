@@ -42,6 +42,16 @@
   --z-fixed: 100;
 }
 
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 7.5rem;
