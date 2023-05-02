@@ -82,3 +82,14 @@ sr.reveal(`.specs__data, .discount__animate`,{origin: 'left', interval: 100})
 sr.reveal(`.specs__img, .discount__img`,{origin: 'right'})
 sr.reveal(`.case__img`,{origin: 'top'})
 sr.reveal(`.case__data`)
+
+const video = document.getElementById('video-background');
+
+window.addEventListener('scroll', function() {
+  const scrollPosition = window.pageYOffset;
+  const videoPosition = video.offsetTop;
+
+  if (scrollPosition >= videoPosition + video.offsetHeight) {
+    video.currentTime = 0;
+  }
+});
